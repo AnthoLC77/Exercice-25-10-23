@@ -73,7 +73,7 @@ const longueurStr = (mot) => {
 console.log(longueurStr(userMot));
 */
 /// EXO 3 ///
-
+/*
 let phraseUser = prompt("Choisir une phrase.");
 let caracteresASupprimer = prompt(
   "Choisir un caracteres à supprimer dans la phrase =>" + phraseUser
@@ -89,5 +89,24 @@ const suppr = (phrase, caract) => {
 };
 
 suppr(phraseUser, caracteresASupprimer);
-
+*/
 /// EXO 6 ///
+
+let motUser = prompt("Ecrire un mot au choix.");
+
+const palindrome = (mot) => {
+  let splitMot = mot.split("");
+  splitMot.reverse();
+  let motRattache = splitMot.join("");
+  if (mot == motRattache) {
+    return document.write(
+      mot + " => " + motRattache + " est bien un palindrome"
+    );
+  } else {
+    return document.write(
+      mot + " => " + motRattache + " n'est pas un palindrome"
+    );
+  }
+};
+
+console.log(palindrome(motUser));
